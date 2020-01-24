@@ -1,0 +1,87 @@
+sytem:
+    domain:
+        fucuse-abstracts:
+            - Propect
+            - Sales
+            - Customers
+        artifacts:
+            - Lead (trigger by some criteria :-asking for scope pricing)
+            - Accounts:
+                - Opportunity -> MKT-ROI, Close Rate
+                - Contacts 
+                - Cases ( tikets ) -> Case Resolution Time, Customer Satisfaction
+    client:
+        type: john@gmail.com
+        tel: 08xxxxxx
+        tikets: ref
+        actions: CR,U-(tel,email)
+        tickets_rel_ref: t1,t2
+        order_rel_ref: t1,t2
+        conversation_rel_ref: cv1,cv2
+        notification_rel_ref: nt1,nt2
+    admin:
+        roles: team-admin,ticket-admin
+        actions: CR,U-(roles)
+        tickets_assigned_ref: t1,t2
+
+    tiket:
+        samples:
+            title: Got question from user
+            context:
+                user-info: uid,name,tel,profile
+                conversations: ref1
+            states:
+                - in-progress,done
+            assignee: ref
+            satisfaction: ref
+    
+    purchasing-order:
+        samples:
+            title: Purchase Car Insurance
+            purchaser:
+                contact: xxxx
+            products: p1-100kTHB
+            revenue: xxxxTHB
+    campaign:
+        samples:
+            - buy1get1:
+                apply-rules: 
+                    - discount-order
+                context-display:
+                    title: buy 1 get 1
+                    hero-banner: xxx.jpg
+            - freeOilCoupon:
+                apply-rules: none
+                apply-workflow:
+                    - issue-coupon:
+                        steps:
+                            - deliver-coupon
+                            - tel-confirm
+                context_display:
+                    title: buy this get free Oil Coupon 2000 THB
+                    hero-banner: xxx.jpg
+
+    coupon:
+        samples:
+            - oilcoupon2000THB:
+                apply-rules: xxx
+    property:
+        field-type: radio-select, dropdown-select, check-box, sg-line-txt, multi-line-txt, user
+
+    chatsession:
+        states:
+            - in-progress,done
+        channel: line,fb-msg,whatapp
+        msgs: xxxx,xxx,xx
+        case_ref: <ref>
+
+    event-submit-flows:
+        states:
+            - in-progress,done
+        samples:
+            - submit-order-info:
+                steps:
+                    - readme
+                    - form-list
+                    - preview-confirm
+    
