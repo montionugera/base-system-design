@@ -1,0 +1,13 @@
+system:
+  chatsession:
+    states:
+      chat: in-progress,done
+      handler: auto,manual
+    channel: line,fb-msg,whatapp,sms
+    msgs: xxxx,xxx,xx
+    case_ref: <ref>
+    assignee:
+      handler: 
+            
+
+    

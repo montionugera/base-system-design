@@ -1,0 +1,527 @@
+[
+  {
+    "id": "9173528",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fa.png?alt=media&token=0457c205-6265-42fb-8596-a655ce467b41",
+    "type": {
+      "value": "1",
+      "label": { "th": "ประกันชั้น 1", "en": "Class 1" }
+    },
+    "level": "1",
+    "price": 23000,
+    "commission_percent": 0.15,
+    "brand": {
+      "value": "1",
+      "label": { "th": "มั่นใจประกันภัย", "en": "Manjai Insurance" }
+    },
+    "brand_image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fa.png?alt=media&token=0457c205-6265-42fb-8596-a655ce467b41",
+    "car_coverage": {
+      "insurance_fund": 1000000,
+      "deductible_fee": null,
+      "repair_type": { "value": "1", "label": { "th": "ห้าง", "en": "Shop" } },
+      "theft_fund": 1000000,
+      "fire_fund": 1000000,
+      "flood_fund": 1000000
+    },
+    "uninsured_motorist_coverage": {
+      "bodily_injury_per_person": 1000000,
+      "bodily_injury_per_incident": 10000000,
+      "property_damage_per_incident": 5000000
+    },
+    "insured_motorist_coverage": {
+      "coverage_passenger": 4,
+      "bodily_injury": 200000,
+      "medical_fund": 200000,
+      "bail_bond_fund": 200000
+    }
+  },
+  {
+    "id": "418325",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fa.png?alt=media&token=0457c205-6265-42fb-8596-a655ce467b41",
+    "type": {
+      "value": "1",
+      "label": { "th": "ประกันชั้น 1", "en": "Class 1" }
+    },
+    "level": "1",
+    "price": 18000,
+    "commission_percent": 0.1,
+    "brand": {
+      "value": "1",
+      "label": { "th": "มั่นใจประกันภัย", "en": "Manjai Insurance" }
+    },
+    "brand_image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fa.png?alt=media&token=0457c205-6265-42fb-8596-a655ce467b41",
+    "car_coverage": {
+      "insurance_fund": 390000,
+      "deductible_fee": null,
+      "repair_type": { "value": "2", "label": { "th": "อู่", "en": "Garage" } },
+      "theft_fund": 390000,
+      "fire_fund": 390000,
+      "flood_fund": 390000
+    },
+    "uninsured_motorist_coverage": {
+      "bodily_injury_per_person": 1000000,
+      "bodily_injury_per_incident": 10000000,
+      "property_damage_per_incident": 5000000
+    },
+    "insured_motorist_coverage": {
+      "coverage_passenger": 4,
+      "bodily_injury": 200000,
+      "medical_fund": 200000,
+      "bail_bond_fund": 200000
+    }
+  },
+  {
+    "id": "1521941",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fa.png?alt=media&token=0457c205-6265-42fb-8596-a655ce467b41",
+    "type": {
+      "value": "1",
+      "label": { "th": "ประกันชั้น 1", "en": "Class 1" }
+    },
+    "level": "1",
+    "price": 22000,
+    "commission_percent": 0.1,
+    "brand": {
+      "value": "1",
+      "label": { "th": "มั่นใจประกันภัย", "en": "Manjai Insurance" }
+    },
+    "brand_image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fa.png?alt=media&token=0457c205-6265-42fb-8596-a655ce467b41",
+    "car_coverage": {
+      "insurance_fund": 1200000,
+      "deductible_fee": null,
+      "repair_type": { "value": "2", "label": { "th": "อู่", "en": "Garage" } },
+      "theft_fund": 1200000,
+      "fire_fund": 1200000,
+      "flood_fund": 1200000
+    },
+    "uninsured_motorist_coverage": {
+      "bodily_injury_per_person": 1000000,
+      "bodily_injury_per_incident": 10000000,
+      "property_damage_per_incident": 5000000
+    },
+    "insured_motorist_coverage": {
+      "coverage_passenger": 4,
+      "bodily_injury": 200000,
+      "medical_fund": 200000,
+      "bail_bond_fund": 200000
+    }
+  },
+  {
+    "id": "9431234",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fa.png?alt=media&token=0457c205-6265-42fb-8596-a655ce467b41",
+    "type": {
+      "value": "3+",
+      "label": { "th": "ประกันชั้น 3+", "en": "Class 3+" }
+    },
+    "level": "3+",
+    "price": 5100,
+    "commission_percent": 0.05,
+    "brand": {
+      "value": "1",
+      "label": { "th": "มั่นใจประกันภัย", "en": "Manjai Insurance" }
+    },
+    "brand_image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fa.png?alt=media&token=0457c205-6265-42fb-8596-a655ce467b41",
+    "car_coverage": {
+      "insurance_fund": 300000,
+      "deductible_fee": null,
+      "repair_type": { "value": "2", "label": { "th": "อู่", "en": "Garage" } },
+      "theft_fund": null,
+      "fire_fund": null,
+      "flood_fund": null
+    },
+    "uninsured_motorist_coverage": {
+      "bodily_injury_per_person": 500000,
+      "bodily_injury_per_incident": 10000000,
+      "property_damage_per_incident": 1000000
+    },
+    "insured_motorist_coverage": {
+      "coverage_passenger": 4,
+      "bodily_injury": 100000,
+      "medical_fund": 100000,
+      "bail_bond_fund": 300000
+    }
+  },
+  {
+    "id": "1628472",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fb.png?alt=media&token=3e3eec14-99f5-4627-8d62-0fa95b41dbeb",
+    "type": {
+      "value": "2+",
+      "label": { "th": "ประกันชั้น 2+", "en": "Class 2+" }
+    },
+    "level": "2+",
+    "price": 7600,
+    "commission_percent": 0.05,
+    "brand": {
+      "value": "2",
+      "label": { "th": "สามเพชรประกันภัย", "en": "Diamond Insurance" }
+    },
+    "brand_image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fb.png?alt=media&token=3e3eec14-99f5-4627-8d62-0fa95b41dbeb",
+    "car_coverage": {
+      "insurance_fund": 150000,
+      "deductible_fee": null,
+      "repair_type": { "value": "2", "label": { "th": "อู่", "en": "Garage" } },
+      "theft_fund": 150000,
+      "fire_fund": 150000,
+      "flood_fund": null
+    },
+    "uninsured_motorist_coverage": {
+      "bodily_injury_per_person": 500000,
+      "bodily_injury_per_incident": 10000000,
+      "property_damage_per_incident": 1000000
+    },
+    "insured_motorist_coverage": {
+      "coverage_passenger": 4,
+      "bodily_injury": 100000,
+      "medical_fund": 100000,
+      "bail_bond_fund": 300000
+    }
+  },
+  {
+    "id": "7532154",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fc.png?alt=media&token=0e703812-5d69-4185-a952-ac23498b94be",
+    "type": {
+      "value": "3",
+      "label": { "th": "ประกันชั้น 3", "en": "Class 3" }
+    },
+    "level": "3",
+    "price": 1900,
+    "commission_percent": 0.05,
+    "brand": {
+      "value": "3",
+      "label": { "th": "มั่นคงประกันภัย", "en": "Mankong Insurance" }
+    },
+    "brand_image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fc.png?alt=media&token=0e703812-5d69-4185-a952-ac23498b94be",
+    "car_coverage": {
+      "insurance_fund": null,
+      "deductible_fee": null,
+      "repair_type": { "value": "2", "label": { "th": "อู่", "en": "Garage" } },
+      "theft_fund": null,
+      "fire_fund": null,
+      "flood_fund": null
+    },
+    "uninsured_motorist_coverage": {
+      "bodily_injury_per_person": 500000,
+      "bodily_injury_per_incident": 10000000,
+      "property_damage_per_incident": 800000
+    },
+    "insured_motorist_coverage": {
+      "coverage_passenger": 4,
+      "bodily_injury": 50000,
+      "medical_fund": 50000,
+      "bail_bond_fund": 100000
+    }
+  },
+  {
+    "id": "6521342",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fd.png?alt=media&token=38a10481-6d38-497a-856f-79baf548004a",
+    "type": {
+      "value": "1",
+      "label": { "th": "ประกันชั้น 1", "en": "Class 1" }
+    },
+    "level": "1",
+    "price": 17228,
+    "commission_percent": 0.05,
+    "brand": {
+      "value": "4",
+      "label": { "th": "ทิศประกันภัย", "en": "Dice Insurance" }
+    },
+    "brand_image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fd.png?alt=media&token=38a10481-6d38-497a-856f-79baf548004a",
+    "car_coverage": {
+      "insurance_fund": 1200000,
+      "deductible_fee": 1200000,
+      "repair_type": { "value": "1", "label": { "th": "ห้าง", "en": "Shop" } },
+      "theft_fund": 1200000,
+      "fire_fund": 1200000,
+      "flood_fund": 1200000
+    },
+    "uninsured_motorist_coverage": {
+      "bodily_injury_per_person": 1000000,
+      "bodily_injury_per_incident": 10000000,
+      "property_damage_per_incident": 2500000
+    },
+    "insured_motorist_coverage": {
+      "coverage_passenger": 4,
+      "bodily_injury": 100000,
+      "medical_fund": 100000,
+      "bail_bond_fund": 200000
+    }
+  },
+  {
+    "id": "1956341",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fe.png?alt=media&token=8db0cbbc-1ce9-408e-a49a-613a58679e6e",
+    "type": {
+      "value": "1",
+      "label": { "th": "ประกันชั้น 1", "en": "Class 1" }
+    },
+    "level": "1",
+    "price": 10999,
+    "commission_percent": 0.05,
+    "brand": {
+      "value": "5",
+      "label": { "th": "ช้างไทยประกันภัย", "en": "ChaangTai Insurance" }
+    },
+    "brand_image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fe.png?alt=media&token=8db0cbbc-1ce9-408e-a49a-613a58679e6e",
+    "car_coverage": {
+      "insurance_fund": 300000,
+      "deductible_fee": 3000,
+      "repair_type": { "value": "1", "label": { "th": "ห้าง", "en": "Shop" } },
+      "theft_fund": 300000,
+      "fire_fund": 300000,
+      "flood_fund": 300000
+    },
+    "uninsured_motorist_coverage": {
+      "bodily_injury_per_person": 500000,
+      "bodily_injury_per_incident": 10000000,
+      "property_damage_per_incident": 2500000
+    },
+    "insured_motorist_coverage": {
+      "coverage_passenger": 4,
+      "bodily_injury": 100000,
+      "medical_fund": 100000,
+      "bail_bond_fund": 300000
+    }
+  },
+  {
+    "id": "1634271",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fe.png?alt=media&token=8db0cbbc-1ce9-408e-a49a-613a58679e6e",
+    "type": {
+      "value": "1",
+      "label": { "th": "ประกันชั้น 1", "en": "Class 1" }
+    },
+    "level": "1",
+    "price": 9999,
+    "commission_percent": 0.05,
+    "brand": {
+      "value": "5",
+      "label": { "th": "ช้างไทยประกันภัย", "en": "ChaangTai Insurance" }
+    },
+    "brand_image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fe.png?alt=media&token=8db0cbbc-1ce9-408e-a49a-613a58679e6e",
+    "car_coverage": {
+      "insurance_fund": 200000,
+      "deductible_fee": 3000,
+      "repair_type": { "value": "2", "label": { "th": "อู่", "en": "Garage" } },
+      "theft_fund": 200000,
+      "fire_fund": 200000,
+      "flood_fund": 200000
+    },
+    "uninsured_motorist_coverage": {
+      "bodily_injury_per_person": 500000,
+      "bodily_injury_per_incident": 10000000,
+      "property_damage_per_incident": 2500000
+    },
+    "insured_motorist_coverage": {
+      "coverage_passenger": 4,
+      "bodily_injury": 100000,
+      "medical_fund": 100000,
+      "bail_bond_fund": 300000
+    }
+  },
+  {
+    "id": "1537243",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Ff.png?alt=media&token=a7c7b95b-12c4-47ea-978d-a634a5725be8",
+    "type": {
+      "value": "1",
+      "label": { "th": "ประกันชั้น 1", "en": "Class 1" }
+    },
+    "level": "1",
+    "price": 9500,
+    "commission_percent": 0.05,
+    "brand": {
+      "value": "6",
+      "label": { "th": "ภูเขาประกันภัย", "en": "Trai Insurance" }
+    },
+    "brand_image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Ff.png?alt=media&token=a7c7b95b-12c4-47ea-978d-a634a5725be8",
+    "car_coverage": {
+      "insurance_fund": 200000,
+      "deductible_fee": 3000,
+      "repair_type": { "value": "2", "label": { "th": "อู่", "en": "Garage" } },
+      "theft_fund": 200000,
+      "fire_fund": 200000,
+      "flood_fund": 200000
+    },
+    "uninsured_motorist_coverage": {
+      "bodily_injury_per_person": 300000,
+      "bodily_injury_per_incident": 10000000,
+      "property_damage_per_incident": 2500000
+    },
+    "insured_motorist_coverage": {
+      "coverage_passenger": 4,
+      "bodily_injury": 50000,
+      "medical_fund": 50000,
+      "bail_bond_fund": 50000
+    }
+  },
+  {
+    "id": "6391726",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fe.png?alt=media&token=8db0cbbc-1ce9-408e-a49a-613a58679e6e",
+    "type": {
+      "value": "1",
+      "label": { "th": "ประกันชั้น 1", "en": "Class 1" }
+    },
+    "level": "1",
+    "price": 8999,
+    "commission_percent": 0.05,
+    "brand": {
+      "value": "5",
+      "label": { "th": "ช้างไทยประกันภัย", "en": "ChaangTai Insurance" }
+    },
+    "brand_image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fe.png?alt=media&token=8db0cbbc-1ce9-408e-a49a-613a58679e6e",
+    "car_coverage": {
+      "insurance_fund": 100000,
+      "deductible_fee": 3000,
+      "repair_type": { "value": "2", "label": { "th": "อู่", "en": "Garage" } },
+      "theft_fund": 100000,
+      "fire_fund": 100000,
+      "flood_fund": 100000
+    },
+    "uninsured_motorist_coverage": {
+      "bodily_injury_per_person": 500000,
+      "bodily_injury_per_incident": 10000000,
+      "property_damage_per_incident": 2500000
+    },
+    "insured_motorist_coverage": {
+      "coverage_passenger": 4,
+      "bodily_injury": 100000,
+      "medical_fund": 100000,
+      "bail_bond_fund": 300000
+    }
+  },
+  {
+    "id": "3583143",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Ff.png?alt=media&token=a7c7b95b-12c4-47ea-978d-a634a5725be8",
+    "type": {
+      "value": "1",
+      "label": { "th": "ประกันชั้น 1", "en": "Class 1" }
+    },
+    "level": "1",
+    "price": 7500,
+    "commission_percent": 0.05,
+    "brand": {
+      "value": "6",
+      "label": { "th": "ภูเขาประกันภัย", "en": "Trai Insurance" }
+    },
+    "brand_image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Ff.png?alt=media&token=a7c7b95b-12c4-47ea-978d-a634a5725be8",
+    "car_coverage": {
+      "insurance_fund": 100000,
+      "deductible_fee": 3000,
+      "repair_type": { "value": "2", "label": { "th": "อู่", "en": "Garage" } },
+      "theft_fund": 100000,
+      "fire_fund": 100000,
+      "flood_fund": 100000
+    },
+    "uninsured_motorist_coverage": {
+      "bodily_injury_per_person": 300000,
+      "bodily_injury_per_incident": 10000000,
+      "property_damage_per_incident": 2500000
+    },
+    "insured_motorist_coverage": {
+      "coverage_passenger": 4,
+      "bodily_injury": 50000,
+      "medical_fund": 50000,
+      "bail_bond_fund": 50000
+    }
+  },
+  {
+    "id": "1184380",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fc.png?alt=media&token=0e703812-5d69-4185-a952-ac23498b94be",
+    "type": {
+      "value": "3+",
+      "label": { "th": "ประกันชั้น 3+", "en": "Class 3+" }
+    },
+    "level": "3+",
+    "price": 7100,
+    "commission_percent": 0.05,
+    "brand": {
+      "value": "3",
+      "label": { "th": "มั่นคงประกันภัย", "en": "Mankong Insurance" }
+    },
+    "brand_image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fc.png?alt=media&token=0e703812-5d69-4185-a952-ac23498b94be",
+    "car_coverage": {
+      "insurance_fund": 100000,
+      "deductible_fee": null,
+      "repair_type": { "value": "2", "label": { "th": "อู่", "en": "Garage" } },
+      "theft_fund": null,
+      "fire_fund": null,
+      "flood_fund": null
+    },
+    "uninsured_motorist_coverage": {
+      "bodily_injury_per_person": 500000,
+      "bodily_injury_per_incident": 10000000,
+      "property_damage_per_incident": 1000000
+    },
+    "insured_motorist_coverage": {
+      "coverage_passenger": 4,
+      "bodily_injury": 100000,
+      "medical_fund": 100000,
+      "bail_bond_fund": 200000
+    }
+  },
+  {
+    "id": "4563212",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Ff.png?alt=media&token=a7c7b95b-12c4-47ea-978d-a634a5725be8",
+    "type": {
+      "value": "2+",
+      "label": { "th": "ประกันชั้น 2+", "en": "Class 2+" }
+    },
+    "level": "2+",
+    "price": 1200,
+    "commission_percent": 0.05,
+    "brand": {
+      "value": "6",
+      "label": { "th": "ภูเขาประกันภัย", "en": "Trai Insurance" }
+    },
+    "brand_image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Ff.png?alt=media&token=a7c7b95b-12c4-47ea-978d-a634a5725be8",
+    "car_coverage": {
+      "insurance_fund": 100000,
+      "deductible_fee": null,
+      "repair_type": { "value": "1", "label": { "th": "ห้าง", "en": "Shop" } },
+      "theft_fund": null,
+      "fire_fund": null,
+      "flood_fund": null
+    },
+    "uninsured_motorist_coverage": {
+      "bodily_injury_per_person": 100000,
+      "bodily_injury_per_incident": 10000000,
+      "property_damage_per_incident": 1500000
+    },
+    "insured_motorist_coverage": {
+      "coverage_passenger": 4,
+      "bodily_injury": 50000,
+      "medical_fund": 50000,
+      "bail_bond_fund": 50000
+    }
+  },
+  {
+    "id": "2514562",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fg.png?alt=media&token=7d165174-0fc5-4406-a4e4-75545dd3f208",
+    "type": {
+      "value": "1",
+      "label": { "th": "ประกันชั้น 1", "en": "Class 1" }
+    },
+    "level": "1",
+    "price": 17399,
+    "commission_percent": 0.05,
+    "brand": {
+      "value": "7",
+      "label": { "th": "จตุรัสประกันภัย", "en": "Square Insurance" }
+    },
+    "brand_image": "https://firebasestorage.googleapis.com/v0/b/agentmate-line-bot.appspot.com/o/assets%2Finsur-company-logo%2Fg.png?alt=media&token=7d165174-0fc5-4406-a4e4-75545dd3f208",
+    "car_coverage": {
+      "insurance_fund": 550000,
+      "deductible_fee": null,
+      "repair_type": { "value": "1", "label": { "th": "ห้าง", "en": "Shop" } },
+      "theft_fund": 550000,
+      "fire_fund": 550000,
+      "flood_fund": 550000
+    },
+    "uninsured_motorist_coverage": {
+      "bodily_injury_per_person": 500000,
+      "bodily_injury_per_incident": 10000000,
+      "property_damage_per_incident": 5000000
+    },
+    "insured_motorist_coverage": {
+      "coverage_passenger": 4,
+      "bodily_injury": 200000,
+      "medical_fund": 200000,
+      "bail_bond_fund": 300000
+    }
+  }
+]

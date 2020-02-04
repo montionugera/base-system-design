@@ -1,0 +1,34 @@
+system:
+    purchasing-order:
+        samples:
+            title: Purchase Car Insurance
+            purchaser:
+                contact: xxxx
+            products: p1-100kTHB
+            revenue: xxxxTHB
+    campaign:
+        samples:
+            - buy1get1:
+                apply-on: 
+                    func: cal_order
+                    cal: if sku1.count > 2 -> add discount.cp
+                display:
+                    title: buy 1 get 1
+                    hero-banner: xxx.jpg
+            - freeOilCoupon:
+                apply-rules: none
+                apply-workflow:
+                    - issue-coupon:
+                        steps:
+                            - deliver-coupon
+                            - tel-confirm
+                context_display:
+                    title: buy this get free Oil Coupon 2000 THB
+                    hero-banner: xxx.jpg
+
+    coupon:
+        samples:
+            - oilcoupon2000THB:
+                apply-rules: xxx
+
+    

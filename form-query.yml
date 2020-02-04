@@ -1,0 +1,26 @@
+system:
+    form:
+        subject: Car Info Query
+        elements: <form-elements-ref>s
+    form-trans:
+        states:
+            - in-progress,done
+        form-info:
+            elements-info: json ..
+            form_ref: <ref>
+        samples:
+            - submit-order-info:
+                steps:
+                    - readme
+                    - form-list
+                    - preview-confirm
+    form-elements:
+        type: |
+            radio-select, dropdown-select, 
+            check-box, sg-line-txt, multi-line-txt, user<ref>
+        label: full-name
+        placeholder: ""
+
+    
+
+    

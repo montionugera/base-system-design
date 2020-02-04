@@ -1,0 +1,19 @@
+system:
+    product:
+        samples:
+            title: Ins-Car-no1
+            price: 15000
+            currency: 'THB'
+    cart:
+        products:
+            -p1,10ea
+        user: <u_ref>
+    purchasing-trans:
+        samples:
+            title: Purchase Car Insurance
+            purchaser:
+                contact: xxxx
+            products: p1-100kTHB
+            revenue: xxxxTHB
+            artifacts: <form-request>s
+    

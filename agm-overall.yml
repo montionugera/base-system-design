@@ -1,0 +1,67 @@
+system:
+  ccs:
+    login:
+    admin:
+  chat-bot:
+    link-account:
+      input:
+        - national_id
+      api:
+        validate:
+          input: national_id
+          output:
+            guide_tel_no:
+              ex: 08xxxxx0
+            customer_id:
+              ex: 1000001
+        getCustomerInfo:
+          input:
+            - customer_id
+          output:
+            - name
+            - tel
+            - national-card-info
+    reminder:
+      api:
+        getPurchaseHistory:
+          input:
+            - customer_id
+          output:
+            trans:
+              car-info:
+              product-info:
+              expire-date:
+              payment-info: optional
+        getProductMaster:
+          input: -
+          output:
+            product-list:
+              display-info:
+              insure-coverage:
+              condition:
+              price-table:
+        events:
+          - onCreatePurchaseTrans:
+            - updateOrCreateNoti
+          - onUpdatePurchaseTrans:
+          - onDeletePurchaseTrans:
+      schedule:
+        - sync:
+          time: weekly
+          func: customer-purchase-history
+        - sync:
+          time: daily
+          func: remind-purchase
+    purchase-product:
+      api:
+        get_prices_of_product:
+          input:
+            - customer_info
+            - car_info
+            - currency
+          output: 
+            price: xxx.xx
+            currency: THB
+      
+    complete-payment:
+      

@@ -1,0 +1,210 @@
+notes:
+  epic: feature
+  story: ex. can receive reminder
+
+bots :
+  - desc: query Additional
+theme:
+  - CCS-ManageUser
+  - Login / Logout / ForgetPWD
+  - Outbound-Notif / Reminder
+  - Inbound / Chat
+  - Tools - Articles
+  - xxxx Case
+  - xxxx Promotion
+  - Custom Bots xxxx
+    - Path Builder
+    - Answer Bot
+  - Report 
+    - Overview
+    - Inbox reports
+      - summary
+      - new
+      - tags
+      - performance
+      - lead
+      - export
+    - Messages reports
+    - Articles reports
+    - Operator reports
+    - Case reports
+      
+    - Settings
+      - Teammate
+      - Spam
+      - Webhook Settings
+
+functions:
+  - link broker account
+Handler:
+  examples:
+    - type: askQuestion
+    - question: Question(user,'')
+    - listenOn: userDidSendMsg
+models:
+  Flow:
+    name: queriedAdditionalData
+    desc: prepare quotation and feed to flow payment
+    payload:
+      quotation:
+        info: xx
+        price: xxx
+      handlers:
+        - step: ask Evidence 1
+          enterThisStepOn:
+            event: didUserEnterState
+            cond:
+              - userIs: Me
+              - userStateIs: 
+                - verifiedCustomer: true
+        - step: ask Evidence 2
+          enterThisStepOn:
+            event: didUserEnterState
+            cond:
+              - userIs: Me
+              - userStateIs: 
+                - verifiedCustomer: true
+  BusinessAccount:
+    customers:
+      - customerInfo:
+          firstName: Pasit
+        states:
+          verifiedCustomer: true
+        currentFlow: 
+          flow: queriedAdditionalData
+          payload:
+            quotation:
+              info: xx
+              price: xxx
+            queries:
+              - step: ask Evidence 1
+                enterThisStepOn:
+                  event: didUserEnterState
+                  cond:
+                    - userIs: Me
+                    - userStateIs: 
+                      - verifiedCustomer: true
+                mapPayload: quotation.Evidence
+              - step: ask Evidence 1
+                mapPayload: quotation.Evidence
+              
+
+system:
+  - themes: agent-tools
+    epics:
+    - name: Collect Data
+      stories: 
+      - desc: |
+          As I am a user
+          when I receive a notification about renewal 
+          so that I can renew with current product or new product
+        tasks:
+          - backend - create Purchase History data model
+          - batchjob - create purchase histrory (3rd Party API)
+          - backend - create Reminder Data Model data model
+          - | 
+              batchjob(daily) - create reminder (who, what , when) from purchase histrory
+              condition : 
+                now - purchase expire date < {x} days 
+                and create reminder = False
+                limit workload_size
+              note:
+                workload_size = calculateFrom()????
+              Support Quota 
+              [ 100/100 50/50 150/150 | 50/50 50/50 0/50 ]
+          - create polling function to send reminder when it should to
+          
+        aceptance-criteria:
+          - Scenario: renewal with current product
+            Desc: |
+              Given I am an old customer
+              When I select renew current product
+              Then I can see selected product message with confirm button
+              When I confirm to buy
+              Then I can manage quotation information - national id card
+              When I complete manage the information
+              Then I can manage quotation information - carreg
+              When I complete manage the information
+              Then I can see payment option message:
+              |  options      |
+              |  QR code      |
+              |  Credit Card  |
+              When I select payment method
+              Then I can recieve payment confirm msg
+
+          - Scenario: manage quotation information - national id card
+            Desc: |
+              Given I receive national  dialog with Confirm / Edit Choices
+              When I Confirm
+              Then I complete this scenario
+              
+          - Scenario: manage quotation information case Edit
+            Desc: |
+              Given I receive quotation dialog with Confirm / Edit Choices
+              When I Confirm
+              Then I complete this scenario
+
+            
+          - Scenario: manage quotation information case National ID expire
+            Desc: |
+              Given I receive re-enter National ID flex MSG 
+              When I re-enter National ID data ( OCR )
+              Then I complete this scenario
+              
+          - Scenario: payment with QR code
+            Desc: |
+              Given I select payment with QR code
+              When I complete payment
+              And I send the payment evidence via chat message
+              Then Admin can complete this transaction
+              When Admin update transaction
+              Then I can recieve payment confirm msg
+
+              
+          - Scenario: payment with Credit Card
+            Desc: |
+              Given I select payment with Credit Card
+              When I complete payment
+              Then I can recieve payment confirm msg
+              
+        
+
+    - name: Customer - The system can check the information of old customers.
+      stories:
+        - name: As a agent user, I want View Customer Information in the Tools Panel
+        - tasks: 
+          - create mock 3rd get Customer Information + Purchase History API
+          - create get Customer Information API with authorization + Access Log
+          - create get Customer Purchase History API with authorization + Access Log
+          - create view Customer Information UI + Purchase History List UI
+          - Plug UI and API to the CCS Inbound tools Page
+
+    - name: Product - Call Center Staff can filter insurance product to choose insurance products for send to customers.
+      stories:
+        - name: As a superAdmin, I want CRUD Product Master data
+        - tasks: 
+          - create get Customer Information API with authorization + Access Log
+          - Show Customer Information UI + Purchase History List
+          - Plug UI and API to the CCS Inbound tools Page
+          
+    - name: Call Center Staff can filter insurance product to choose insurance products for send to customers.
+      stories:
+        - name: As a superAdmin, I want View Customer Information in the Tools Panel
+        - tasks: 
+          - get Customer Information API with authorization + Access Log
+          - Show Customer Information UI + Purchase History List
+          - Plug UI and API to the CCS Inbound tools Page
+
+
+    - name: | 
+        As a superAdmin, I want to create a "bot" from template so 
+        bot can dynamically response to the "event" without hard code
+      stories:
+        - name: | 
+            As a superAdmin, I want to Create Broker Account and link with Line Channel(s)
+        - name: | 
+            As a superAdmin, I want to view Broker Account and her Line Channel(s)
+        - name: | 
+            As a chat system, I want to be able to store all MSG from the linked channel
+
+            

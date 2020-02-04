@@ -1,0 +1,12 @@
+system:
+    case:
+        samples:
+            title: Got question from user
+            context:
+                user-info: uid,name,tel,profile
+                conversations: ref1
+            states:
+                - in-progress,done
+            assignee: ref
+            satisfaction: ref
+            client: ref

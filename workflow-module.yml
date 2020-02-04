@@ -1,0 +1,69 @@
+system:
+  ref: 'https://exceptionnotfound.net/designing-a-workflow-engine-database-part-8-complete-schema-and-shortcomings/'
+  models:
+    event:
+      examples: 
+        - payLoad:
+            room:
+              userId: a123567
+              roomId: a123456
+              channelId: a123454
+          id: userDidEnterChatRoom
+        - id: userDidConfirmPayment
+          payLoad:
+            userId: a123567
+            quotationId: q1234
+
+    action:
+      examples:
+        - id: fireWelcomeMsg
+          func: sendMsg
+          payLoad:
+            toRoom:
+              userId: a123567
+              roomId: a123456
+              channelId: a123454
+            content: Hello {state.user.firstName}
+        - id: fireReminder1234
+          func: sendForm
+          payLoad:
+            toRoom:
+              userId: a123567
+              roomId: a123456
+              channelId: a123454
+            content: Hello {state.user.firstName}
+    workflow:
+      examples:
+        - name: reminder
+          initiateByAction: fireReminder1234
+          startOnEvents:
+            - reminder.received
+          endOnEvents:
+            - reminder.received
+        - name: performPayment
+          initiateByAction: fireReminder1234
+          startOnStates:
+            - reminder.received
+          endOnStates:
+            - reminder.received
+
+
+    name:
+    triggerBy:
+    samples:
+        title: Ins-Car-no1
+        price: 15000
+        currency: 'THB'
+    cart:
+        products:
+            -p1,10ea
+        user: <u_ref>
+    purchasing-trans:
+        samples:
+            title: Purchase Car Insurance
+            purchaser:
+                contact: xxxx
+            products: p1-100kTHB
+            revenue: xxxxTHB
+            artifacts: <form-request>s
+    
